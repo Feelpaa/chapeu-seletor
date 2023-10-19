@@ -1,0 +1,62 @@
+Algoritmo "chpeu seletor"
+//
+//
+
+Var
+// Seção de Declarações das variáveis
+resposta1, resposta2, resposta3, resposta4: caractere
+pontos: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+escreval("pergunta um, se voce estivesse em uma situação de perigo o que voce faria?")
+escreval("opção A, enfrentaria o perigo de frente")
+escreval("opção B, pensaria em uma situação mais estrategica")
+leia(resposta1)
+se (resposta1="A") entao
+pontos<-pontos+10
+senao
+pontos<-pontos+5
+fimse
+escreval("pergunta dois, caso voce quebre um quadro da escola, qual feitiço voce usaria para concetar?")
+escreval("opção A, usaria leviousa")
+escreval("opção B, usaria Reparo totalus")
+leia(resposta2)
+se (resposta2="A") entao
+pontos<-pontos+10
+senao
+pontos<-pontos+15
+fimse
+escreval("pergunta um, se seu carro esta sem gasolina voce faz o que?")
+escreval("opção A, empurro até a escola de Hogwarts")
+escreval("opção B, coloco gasolina kkk")
+leia (resposta3)
+se (resposta3="A") entao
+pontos<-pontos+10
+senao
+pontos<-pontos+15
+fimse
+escreval("pergunta um, se voce esta com fome, voce come um sanduiche ou feijões magicos")
+escreval("opção A, como um sandubão")
+escreval("opção B, como feijões magicos com efeitos colaterais")
+leia(resposta4)
+se(resposta4="A") entao
+pontos<-pontos+3
+senao
+pontos<-pontos+1
+fimse
+se ((pontos>=35) e (pontos<=40)) entao
+escreval("hummm voce sera da Grifinoria")
+senao
+se ((pontos>=20) e (pontos<=30)) entao
+escreval("Parabens voce é da Lufa-Lufa")
+senao
+se ((pontos>=40) e (pontos<=45)) entao
+escreval ("Voce parece maligno, SONSERINA")
+senao
+escreval("voce me parece inteligente, que tal Curvinal")
+fimse
+fimse
+fimse
+
+Fimalgoritmo
